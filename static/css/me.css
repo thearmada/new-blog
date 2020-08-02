@@ -1,3 +1,13 @@
+/*margin*/
+.m-margin-top-small{
+    margin-top: 0.5em !important;
+}
+.m-margin-top{
+    margin-top: 1em !important;
+}
+.m-margin-top-large{
+    margin-top: 2em !important;
+}
 .m-margin-tb-tiny{
     margin-top: 0.3em !important;
     margin-bottom: 0.3em !important;
@@ -65,7 +75,8 @@
 .m-text-lined{
     line-height: 1.8 !important;
 }
-/*透明度*/
+
+/*透明度opacity*/
 .m-opacity-mini{
     opacity: 0.8 !important;
 }
@@ -73,6 +84,12 @@
 .m-inline-block{
     display: inline-block !important;
 }
+
+/*---black*/
+.m-black{
+    color: #333 !important;
+}
+/*---container*/
 .m-container{
     max-width: 72em !important;
     margin: auto !important;
