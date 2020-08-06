@@ -21,10 +21,9 @@ body{
 .m-padded-tiny{
     padding: 0.3em !important;
 }
-.m-pa dded-tb-mini{
+.m-padded-tb-mini{
     padding-top: 0.2em !important;
     padding-bottom: 0.2em !important;
-;
 }
 .m-padded-tb-tiny{
     padding-top: 0.3em !important;
@@ -109,9 +108,16 @@ body{
     margin: auto !important;
 }
 
+.m-container-small{
+    max-width:72em !important;
+    margin: auto !important;
+}
+
 .m-mobile-show{
     display: none !important;
 }
+
+
 /*手机移动端隐藏小button*/
 
 @media screen and (max-width: 768px){
