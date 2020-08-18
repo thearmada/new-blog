@@ -40,7 +40,7 @@
 
 
     <!--中间内容-->
-    <div class="m-padded-tb-big m-container-small">
+    <div class="m-container m-padded-tb-big">
         <div class="ui container">
             <div class="ui top attached segment">
                 <div class="ui horizontal link list">
@@ -82,21 +82,23 @@
                 </div>
                 <!--赞赏-->
                 <div class="ui center aligned basic segment">
-                    <button class="ui orange basic circular button">赞赏</button>
+                    <button id="payButton" class="ui orange basic circular button">赞赏</button>
                 </div>
-
-                <div class="ui orange basic label">
-                    <div class="ui images" style="font-size: inherit !important" >
-                        <div class="image" >
-                            <img src="./static/image/dream.jpg" alt="" class="ui rounded bordered image" style="width: 120px">
-                            <div>支付宝</div>
-                        </div>
-                        <div class="image" >
-                            <img src="./static/image/dream.jpg" alt="" class="ui rounded bordered image" style="width: 120px">
-                            <div>微信</div>
+                <div class="ui payQR flowing popup  transition hidden">
+                    <div class="ui orange basic label">
+                        <div class="ui images" style="font-size: inherit !important" >
+                            <div class="image" >
+                                <img src="./static/image/dream.jpg" alt="" class="ui rounded bordered image" style="width: 120px">
+                                <div>支付宝</div>
+                            </div>
+                            <div class="image" >
+                                <img src="./static/image/dream.jpg" alt="" class="ui rounded bordered image" style="width: 120px">
+                                <div>微信</div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
 
 
 
@@ -161,8 +163,14 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css"></script>
         <script>
-            $('.menu.toggle').click(function (){
+            $('.menu.toggle').click(function () {
                 $('.m-item').toggleClass('m-mobile-hide');
+            });
+
+            $('#payButton').popup({
+                popup : $('.payQR.popup'),
+                on : 'click',
+                position:'bottom center'
             });
         </script>
 </body>
